@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D461F2D9-834F-4B6A-96F0-924C50A5D1FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hmsForms</RootNamespace>
+    <AssemblyName>hmsForms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPD\Admit_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPD\Admit_Patient.Designer.cs">
+      <DependentUpon>Admit_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPD\Check_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPD\Check_Patient.Designer.cs">
+      <DependentUpon>Check_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPD\Issue_Prescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPD\Issue_Prescription.Designer.cs">
+      <DependentUpon>Issue_Prescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPD\OPD_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPD\OPD_Dashboard.Designer.cs">
+      <DependentUpon>OPD_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPD\Request_Lab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPD\Request_Lab.Designer.cs">
+      <DependentUpon>Request_Lab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reception\Clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reception\Clinics.Designer.cs">
+      <DependentUpon>Clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reception\Reception_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reception\Reception_Dashboard.Designer.cs">
+      <DependentUpon>Reception_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reception\Search_Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reception\Search_Patients.Designer.cs">
+      <DependentUpon>Search_Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBox\Helper.cs" />
+    <Compile Include="RichTextBox\RichTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\RichTextBox.Designer.cs">
+      <DependentUpon>RichTextBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPD\Admit_Patient.resx">
+      <DependentUpon>Admit_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPD\Check_Patient.resx">
+      <DependentUpon>Check_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPD\Issue_Prescription.resx">
+      <DependentUpon>Issue_Prescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPD\OPD_Dashboard.resx">
+      <DependentUpon>OPD_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPD\Request_Lab.resx">
+      <DependentUpon>Request_Lab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reception\Clinics.resx">
+      <DependentUpon>Clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reception\Reception_Dashboard.resx">
+      <DependentUpon>Reception_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reception\Search_Patients.resx">
+      <DependentUpon>Search_Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RichTextBox\RichTextBox.resx">
+      <DependentUpon>RichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
